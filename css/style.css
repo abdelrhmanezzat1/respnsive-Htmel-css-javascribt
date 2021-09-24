@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --my-color:#f9a826
+}
+body{
+    font-family: cursive;
+    
+}
+.header{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    position: fixed;
+    z-index: 7;
+
+    
+}
+.navbar{
+    
+    cursor: pointer;
+    user-select: none;
+    cursor: pointer;
+    user-select: none;
+    position: fixed;
+    right: -120px;
+    top: 15px;
+    background-color: #f1f7f8;
+    z-index: 2;
+    border-radius: 7px;
+    
+    transition: 0.5s;
+    color: #f9a826;
+}
+ul{
+    
+
+    transition: .5s;
+    user-select: none;
+    text-align: center;
+    width: 120px;
+
+}
+.active{
+
+    right: 0;
+}
+ li{
+ 
+    display: block;
+    font-weight: bold;
+    margin: 9px 0;
+    padding: 9px 0;
+    transition: 0.5s;
+    border-radius: 7px;
+    border: 1px solid transparent;
+}
+li:hover{
+    border: 1px solid #f9a826;
+
+
+}
+.qq{
+    position: fixed;
+    bottom: 52%;
+    right: 5px;
+    z-index: 3;
+    text-align: center;
+    user-select: none;
+} 
+.icon-enter{
+    bottom: 58%;
+    right: 5px;
+    cursor: pointer;
+    z-index: 2;
+    color: #f9a826;
+    border: 0px solid #00000047;
+    border-radius:9px;
+    font-size: 35px;
+    background-color:#f1f7f8;
+
+
+}
+.icons{
+    position: fixed;
+    z-index: 2;
+    bottom: 30%;
+    right: -37px;
+    font-size: 35px;
+cursor: pointer;
+color: #f9a826;
+transition: 0.5s;
+user-select: none;
+}
+.active1{
+    right: 6px;
+
+}
+.icon-facebook{
+display: block;
+margin: 9px 0;
+    transition: 0.5s;
+    border-radius: 7px;
+    border: 1px solid transparent;
+}
+
+.icon-twitter{
+    display: block;
+    margin: 9px 0;
+    transition: 0.5s;
+    border-radius: 7px;
+    border: 1px solid transparent;
+}
+
+.icon-youtube{
+    display: block;
+    margin: 9px 0;
+    transition: 0.5s;
+    border-radius: 7px;
+    border: 1px solid transparent;
+}
+
+ .icon-menu {
+    position: absolute;
+    color: #f9a826;
+    top: 5px;
+    cursor: pointer;
+    font-size: 35px;
+    user-select: none;
+    left: -37px;
+}
+
+.header .logo{
+    
+    font-weight: 800;
+    font-size: xxx-large;
+    color: #f9a826;
+    z-index: 23;
+}
+
+.container{
+    background-image: url(../imgs/01.svg);
+    width: 100%;
+    height: 100vh;
+    
+    background-size: contain; 
+    background-position: center center;
+    transition: 0.5s;  
+    background-repeat: no-repeat; 
+}
+.text{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color:black
+}
+span{
+    color: #f9a826;
+    
+    font-weight:bold ;
+    
+}
+.inro{
+    display: grid;
+    grid-template-rows: repeat(auto-fit,minmax(400px,1fr));
+    place-content: center;
+    gap: 10px;
+
+    background-color: #f1f7f8;
+
+}
+.word{
+    text-align: center;
+    text-align: center;
+    font-weight: bold;
+    line-height: 65px;
+}
+.word h2{
+    color: var(--my-color);
+}
+.word1 h2{
+    color: var(--my-color);
+}
+
+.word1{
+    text-align: center;
+    text-align: center;
+    font-weight: bold;
+    line-height: 65px;
+}
+
+.text2{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(400px,1fr)) ;
+      margin: 5px;
+      align-items: center;
+}
+
+.text1{
+display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(400px,1fr)) ;
+      margin: 5px;
+      align-items: center;
+
+  }
+
+.img{
+    width: 100%;
+    user-select: none;
+    height: 100vh;
+    
+
+}
+img{
+    text-align: center;
+    background-size: cover;
+    background-color: #f1f7f8;
+    width: 100%;
+    height: 100vh;
+
+}
+.rr{
+    display: grid;
+z-index: 0;
+    width: 100%;
+    
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    gap: 40px;
+    padding: 20px;
+    
+}
+.con{
+    
+    clip-path: circle(50% at 50% 50%)
+   
+}
+.card{
+    text-align: center;
+    background-color: #f9a826;
+    height: 100%;
+    border-radius:58px;
+    z-index: 0;
+}
+.card .card-titel{
+    text-align: center;
+    background-color: #f1f7f8;
+    
+    clip-path: circle;
+    clip-path: circle(70% at 50% 50%);
+    border-radius: 40px;
+}
+.card .card-titel h2{
+    font-weight: bold;
+    color: var(--my-color);
+}
+.card .card-titel p{
+    font-weight: bold;
+    line-height: 25px;
+}
+
+.card img {
+    width: 100%;
+    display: block;
+    border-radius: 15px 15px 0 0;
+}
+.up{
+    right: -40px;
+    position: fixed;
+    font-size: 35px;
+    background: #f1f7f8;
+    cursor: pointer;
+    user-select: none;
+    bottom: 100px;
+    border-radius: 7px;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.show{
+    right: 5px;
+}
+.qqq{
+    display: grid;
+z-index: 0;
+margin: 10px 35px;
+
+
+}
+
+.all-rebbin{
+    text-align: center;
+    display: grid;
+    grid-template-rows: repeat(auto-fit,minmax(200px,1fr));
+    gap: 40px;
+    padding: 35px;
+    background-color: #f1f7f8;
+    border-radius: 35px;
+
+}
+.rebin{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 40px;
+    padding: 20px;
+    align-items: center;
+
+}
+.rebin .sp h1{
+    position: relative;
+    background-color: #f9a826;
+    padding: 14px;
+    text-align: center;
+    clip-path: ellipse(54% 100% at 31% 50%);
+    font-weight: bold;
+    font-size: 35px;
+    left: -64px;
+    color: #f1f7f8;
+}
+.rebin .sp h1::before{
+    content: "";
+    border-width: 12px;
+    border-style: solid;
+    border-color: #d1c1a8d4 #d1c1a8d4 transparent transparent;
+    position: absolute;
+    left: 0px;
+    bottom: -24px;
+    z-index: 7;
+}
+i{
+    text-align: center;
+    color: var(--my-color);
+    font-size: 140px;
+}
+.bodyrebbin h2{
+    text-align: center;
+    color: var(--my-color);
+    font-weight: bold;
+
+}
+.bodyrebbin p {
+    text-align: center;
+    font-weight: bold;
+    line-height: 35px;
+
+}
+footer{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    background-color: var(--my-color);
+    margin-top: 15px;
+    border-radius: 20px;
+}
+footer h1{
+    text-align: center;
+    font-weight: bold;
+    padding: 25px;
+    font-size: 40px;
+    color: #f1f7f8;
+}
